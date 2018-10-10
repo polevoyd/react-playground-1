@@ -1,12 +1,12 @@
-import React from 'react';
+import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import HelloWorld from './HelloWorld';
+import Table from './Table';
+import App from './Api';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+// finally, we actually render our HelloWorld app to a root
+ReactDOM.render(<HelloWorld />, document.getElementById('root'));
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: http://bit.ly/CRA-PWA
-serviceWorker.unregister();
+// Lifecycle is the order in which methods are called in React. 
+// Mounting refers to an item being inserted into the DOM
